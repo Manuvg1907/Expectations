@@ -1,1 +1,7 @@
+from itertools import chain, combinations
+
+def power_set(s):
+    return chain.from_iterable(combinations(s, r) for r in range(len(s)+1))
+
+print(list(power_set([1,2,3])))
 
