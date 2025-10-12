@@ -1,4 +1,4 @@
-import threading, 
+import threading, multiprocessing
 
 def task():
     print("Running task...")
@@ -7,3 +7,6 @@ def task():
 t = threading.Thread(target=task)
 t.start()
 
+#Process
+p=multiprocessing.Process(target=task)
+p.start()
