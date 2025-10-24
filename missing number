@@ -1,1 +1,5 @@
+def puzzle(nums):
+    return sum(range(len(nums)+1)) - sum(nums)
+
+print(puzzle([3, 0, 1]))
 
