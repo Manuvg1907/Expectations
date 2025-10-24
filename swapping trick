@@ -1,1 +1,9 @@
+# Without using a third variable, swap the values of a and b
+a = 5
+b = 10
+
+# Write your code here
+
+print("a =", a)
+print("b =", b)
 
