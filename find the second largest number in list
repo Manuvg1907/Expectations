@@ -1,0 +1,15 @@
+def second_largest(nums):
+    if not nums or len(nums) < 2:
+        raise ValueError("Need at least two elements")
+    first = second = float('-inf')
+    for n in nums:
+        if n > first:
+            second, first = first, n
+        elif n > second and n != first:
+            second = n
+    if second == float('-inf'):
+        raise ValueError("No second largest (all elements equal?)")
+    return second
+
+# Example
+print(second_largest([3, 1, 4, 4, 2]))  # 3
