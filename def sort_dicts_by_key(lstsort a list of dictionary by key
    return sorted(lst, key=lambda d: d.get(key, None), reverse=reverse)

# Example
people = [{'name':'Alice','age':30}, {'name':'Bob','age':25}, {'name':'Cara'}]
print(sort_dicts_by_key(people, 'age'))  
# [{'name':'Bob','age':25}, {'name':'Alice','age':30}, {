@@ -1,0 +1,7 @@
+def sort_dicts_by_key(lst, key, reverse=False):
+    return sorted(lst, key=lambda d: d.get(key, None), reverse=reverse)
+
+# Example
+people = [{'name':'Alice','age':30}, {'name':'Bob','age':25}, {'name':'Cara'}]
+print(sort_dicts_by_key(people, 'age'))  
+# [{'name':'Bob','age':25}, {'name':'Alice','age':30}, {'name':'Cara'}]
