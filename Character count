@@ -1,1 +1,5 @@
 
+from collections import Counter
+def char_counts(s):
+    return dict(Counter(s))
+print(char_counts("banana"))
