@@ -1,1 +1,9 @@
+class NoDict:
+    __slots__ = ('x', 'y')
+    def __init__(self, x, y):
+        self.x = x; self.y = y
+
+n = NoDict(1,2)
+print(n.x, n.y)
+# n.z = 3  # AttributeError: No attribute 'z' allowed
 
