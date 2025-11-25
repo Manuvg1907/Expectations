@@ -1,1 +1,9 @@
 
+from functools import lru_cache
+
+@lru_cache(maxsize=None)
+def expensive(x):
+    # pretend heavy compute
+    return x*x
+
+print(expensive(10), expensive.cache_info())
