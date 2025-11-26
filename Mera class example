@@ -1,1 +1,13 @@
+class UpperAttrMeta(type):
+    def __new__(mcls, name, bases, dct):
+        new_attrs = {}
+        for k, v in dct.items():
+            new_attrs[k.upper()] = v
+        return super().__new__(mcls, name, bases, new_attrs)
+
+class My(metaclass=UpperAttrMeta):
+    foo = 'bar'
+
+print(hasattr(My, 'foo'), hasattr(My, 'FOO'))  # False, True
+
 
