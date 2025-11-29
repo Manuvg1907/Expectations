@@ -1,1 +1,9 @@
 
+import copy
+a = [[1], [2]]
+sh = copy.copy(a)
+dp = copy.deepcopy(a)
+a[0][0] = 99
+print("original:", a)   # inner mutated
+print("shallow:", sh)   # inner reflects change
+print("deep:", dp)      # deep copy unchanged
