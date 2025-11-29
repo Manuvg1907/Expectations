@@ -1,1 +1,10 @@
 
+class A:
+    def hello(self): return "hello original"
+
+def new_hello(self): return "hello patched"
+
+a = A()
+print(a.hello())
+A.hello = new_hello  # monkey patch the class
+print(a.hello())
