@@ -1,1 +1,9 @@
+try:
+    risky_code()
+except ValueError as e:
+    print("Value error:", e)  # handles specific exception
+except Exception as e:
+    print("Some other error:", e)  # generic handler
+finally:
+    cleanup()  # always runs, whether exception occurred or not
 
