@@ -1,1 +1,13 @@
+useEffect(() => {
+  console.log("Component mounted");
+}, []);
 
+
+
+//useEffect is used to handle side effects such as:
+
+API calls
+
+Timers
+
+DOM updates
