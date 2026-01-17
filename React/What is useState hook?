@@ -1,1 +1,6 @@
 
+useState is a React Hook used to add state to functional components.
+
+Example:
+
+const [count, setCount] = useState(0);
