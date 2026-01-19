@@ -1,1 +1,8 @@
 
+React is fast because of:
+
+Virtual DOM
+
+Efficient diffing algorithm
+
+Component reusability
