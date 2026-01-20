@@ -1,1 +1,4 @@
 
+SPA (Single Page Application) 
+loads only one HTML page 
+          and updates content dynamically without page reloads.
